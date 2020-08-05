@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="#FFFFFF">
+
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="70dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:text="back"
+                android:layout_marginTop="15dp"
+                android:textColor="#8000" />
+
+            <TextView
+                android:id="@+id/game_title"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/back"
+                android:text="수혈"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#9000"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/chron"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/game_title"
+                android:layout_marginTop="15dp"
+                android:textColor="#9000"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0, 1, 2, 3">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/uplinear1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:weightSum="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/blood_glucose_meter" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|bottom"
+                            android:text="혈당기" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/dosing_card"/>
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="투약카드"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/hand_sanitizer"/>
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="손소독제"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/drugs"/>
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="약물"
+                            android:gravity="center|bottom"/>
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/uplinear5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/bandage"/>
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="붕대"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/transfusion_set"/>
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="수혈세트"
+                            android:gravity="center|bottom"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/extention_tube"/>
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Extention Tube"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/a_3_ways"/>
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="3-way"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/uplinear9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image9"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/alcohol_swap"/>
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="알코올 스왑"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear10"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image10"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/blood_pack"/>
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="혈액팩"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear11"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image11"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/a_1cc"/>
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="1cc주사기"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear12"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image12"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/tape"/>
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="테이프"
+                            android:gravity="center|bottom"/>
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/uplinear13"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image13"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/vs_muchine"/>
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="V/S 측정도구"
+                            android:gravity="center|bottom"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear14"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image14"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/haemostatic_zone"/>
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="지혈대"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear15"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image15"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/sap_set"/>
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="수액세트"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/uplinear16"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/b_image16"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="20dp"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/gloves"/>
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="장갑"
+                            android:gravity="center|bottom" />
+                    </LinearLayout>
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_rounding"
+                android:stretchColumns="0, 1, 2, 3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/frame_shape"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/frame_shape"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/frame_shape"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/frame_shape"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/frame_shape">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="1dp"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/frame_shape">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/frame_shape">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/frame_shape">
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/frame_shape">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear10"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/frame_shape">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear11"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/frame_shape">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear12"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/frame_shape">
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear13"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/frame_shape">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dnlinear14"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/frame_shape">
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_margin="15dp"
+                        android:layout_span="2"
+                        android:textStyle="normal"
+                        android:textSize="20dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/btn_submit"
+                        android:text="제 출 하 기" />
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

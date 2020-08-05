@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".review_inside"
+    tools:showIn="@layout/activity_review_blood">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="아래의 질문을 읽고 잘함은 별3개, 못함은 별2개, 안함은 별1개를 체크해주세요."/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/bloodQ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 수혈처방을 확인한 후 수혈동의서를 확인한다."
+            android:textSize="20dp"
+            android:visibility="visible" />
+        <RatingBar
+            android:id="@+id/bloodratingBarQ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="3"
+            android:stepSize="1" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/bloodQ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. 혈액은행에서 수령해온 혈액을 의료인 2인이 직접 적십자 혈액원 스티커와 후명의 본원 혈액부착 스티커에 기재된 대상자 이름, 성별, 나이, 등록번호, 혈액제제, 혈액고유번호, 혈액형, irradiation 유무, 교차검사 결과, 유통기한, 혈액의 상태(공기방울, 혼탁도, 색깔 이상 등)를 확인하고 확인란에서명한다. "
+            android:textSize="20dp"
+            android:visibility="visible" />
+        <RatingBar
+            android:id="@+id/bloodratingBarQ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="3"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/bloodQ3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. 물과 비누로 손위생을 실시한다."
+            android:textSize="20dp"
+            android:visibility="visible" />
+        <RatingBar
+            android:id="@+id/bloodratingBarQ3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="3"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/bloodQ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. 필요한 물품을 준비한다."
+            android:textSize="20dp"
+            android:visibility="visible" />
+        <RatingBar
+            android:id="@+id/bloodratingBarQ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="3"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/bloodQ5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. 대상자에게 간호사 자신을 소개한다."
+            android:textSize="20dp"
+            android:visibility="visible" />
+        <RatingBar
+            android:id="@+id/bloodratingBarQ5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="3"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/bloodQ6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. 손소독제로 손위생을 실시한다."
+            android:textSize="20dp"
+            android:visibility="visible" />
+        <RatingBar
+            android:id="@+id/bloodratingBarQ6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="3"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/bloodQ7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. 대상자의 이름,
+등록번호를 개방형으로
+질문하여 대상자를
+확인하고, 입원팔찌와
+출력물 등의 환자리스트
+(또는 처방지)를 대조하여
+대상자(이름, 등록번호)를
+확인한 후 대상자에게
+혈액형을 말하도록 하여
+준비한 혈액과 동일한지
+확인한다.
+(의료인 2인이 직접 실시)"
+            android:textSize="20dp"
+            android:visibility="visible" />
+        <RatingBar
+            android:id="@+id/bloodratingBarQ7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="3"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/bloodQ8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. 대상자에게 과거 수혈 경험과 부작용 경험, 유무를 확인하고, 수혈의 목적, 부작용을 설명한다."
+            android:textSize="20dp"
+            android:visibility="visible" />
+        <RatingBar
+            android:id="@+id/bloodratingBarQ8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="3"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:id="@+id/bloodQ9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9. 수혈 전 대상자의 상태를 확인한다. 1) 활력징후 측정, 2) 피부상태 관찰, 가려움증 등"
+            android:textSize="20dp"
+            android:visibility="visible" />
+        <RatingBar
+            android:id="@+id/bloodratingBarQ9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="3"
+            android:stepSize="1" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

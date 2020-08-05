@@ -1,0 +1,11 @@
+diff a/app/src/main/java/com/uvr/slideSQ/MainActivity.java b/app/src/main/java/com/uvr/slideSQ/MainActivity.java	(rejected hunks)
+@@ -1,6 +1,9 @@
+ package com.uvr.slideSQ;
+ 
+ import androidx.appcompat.app.AppCompatActivity;
++
++import android.media.AudioManager;
++import android.media.ToneGenerator;
+ import android.os.Bundle;
+ import android.os.SystemClock;
+ import android.util.Log;
