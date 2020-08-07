@@ -91,6 +91,19 @@
                 android:text="활력징후"
                 android:textColor="@color/textColor"
                 android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sc_injection"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/v_sign"
+                android:background="@drawable/btn_shape"
+                android:text="돌아가기"
+                android:textColor="@color/textColor"
+                android:textSize="25dp" />
         </RelativeLayout>
     </LinearLayout>
 

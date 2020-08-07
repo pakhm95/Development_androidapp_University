@@ -14,13 +14,14 @@ public class game_main2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_main2);
 
-        final Button b_trans, id_injection, sc_injection, h_managemant, v_sign;
+        final Button b_trans, id_injection, sc_injection, h_managemant, v_sign, back;
 
         b_trans = (Button) findViewById(R.id.b_trans);
         id_injection = (Button) findViewById(R.id.id_injection);
         sc_injection = (Button) findViewById(R.id.sc_injection);
         h_managemant = (Button) findViewById(R.id.h_managemant);
         v_sign = (Button) findViewById(R.id.v_sign);
+        back = (Button) findViewById(R.id.back);
 
         b_trans.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +55,13 @@ public class game_main2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(game_main2.this, v_sign.class));
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(game_main2.this, game_main.class));
             }
         });
     }
